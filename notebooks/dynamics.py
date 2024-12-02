@@ -2,6 +2,7 @@
 # coding: utf-8
 
 # In[1]:
+from roboticstoolbox.tools.trajectory import Trajectory
 
 
 import numpy as np
@@ -182,7 +183,8 @@ tg.q
 # In[ ]:
 
 
-rtb.tools.trajectory.qplot(tg.q, tg.t, block=block)
+# rtb.tools.trajectory.qplot(tg.q, tg.t, block=block)
+Trajectory.qplot(tg.q, tg.t, block=block)
 
 
 # or we can animate it, showing the robot collapsing under gravity
